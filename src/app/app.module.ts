@@ -4,16 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {CompanyLoginComponent} from './company-login/company-login.component';
-import {EmployeeLoginComponent} from './employee-login/employee-login.component';
-import { HomeComponent } from './home/home.component';
+import { CompanyLoginComponent } from './content/company-login/company-login.component';
+import { EmployeeLoginComponent } from './content/employee-login/employee-login.component';
+import { HomeComponent } from './content/home/home.component';
+import { NavigatorComponent } from './sub/navigator/navigator.component';
+import { FooterComponent } from './sub/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyLoginComponent,
     EmployeeLoginComponent,
-    HomeComponent
+    HomeComponent,
+    NavigatorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
