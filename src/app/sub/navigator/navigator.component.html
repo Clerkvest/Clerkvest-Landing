@@ -1,15 +1,30 @@
 <div class="navbar">
+  <a>
+    <i class="material-icons">
+      menu
+    </i>
+  </a>
   <a href="/">
     <span class="navbar-title">Clerkvest. </span>
-    <span class="navbar-title-sub">Home</span>
+    <span class="navbar-title-sub"></span>
   </a>
   <div class="dropdown">
-    <button class="login-dropbtn">Dropdown
+    <button class="login-dropbtn">
+      <i class="material-icons">account_circle</i>
+      Einloggen
+      <i class="material-icons">keyboard_arrow_down</i>
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="login-dropdown-content">
-      <a href="/employee-login">EmployeeLogin</a>
-      <a href="/company-login">CompanyLogin</a>
+      <div class="login-dropdown-employee">
+        <h3>Log-in für Angestellte</h3>
+        <a href="/employee-login">EmployeeLogin</a>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="login-dropdown-company">
+        <h3>Log-in für Unternehmer</h3>
+        <a href="/company-login">CompanyLogin</a>
+      </div>
     </div>
   </div>
 </div>
