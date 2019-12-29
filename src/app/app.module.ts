@@ -9,6 +9,10 @@ import { EmployeeLoginComponent } from './content/employee-login/employee-login.
 import { HomeComponent } from './content/home/home.component';
 import { NavigatorComponent } from './sub/navigator/navigator.component';
 import { FooterComponent } from './sub/footer/footer.component';
+import { HeaderComponent } from './sub/header/header.component';
+import { ReasonsComponent } from './sub/reasons/reasons.component';
+import { FeaturesComponent } from './sub/features/features.component';
+import { TitleComponent } from './sub/title/title.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FooterComponent } from './sub/footer/footer.component';
     EmployeeLoginComponent,
     HomeComponent,
     NavigatorComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    ReasonsComponent,
+    FeaturesComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

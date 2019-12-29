@@ -1,0 +1,21 @@
+.title-container {
+  width: 100%;
+  height: 80px;
+}
+
+.title-text {
+  color: black;
+
+  margin-top: 42px;
+
+  text-align: center !important;
+  font-size: 32px;
+}
+
+.title-dot {
+  color: #006ac8;
+
+  text-align: center !important;
+  font-size: 42px;
+  font-family: serif;
+}
