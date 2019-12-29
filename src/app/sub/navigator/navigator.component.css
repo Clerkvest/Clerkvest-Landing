@@ -7,7 +7,7 @@
 }
 
 .brand-dot {
-  color: #006ac8;
+  color: rgba(124,226,255,1) !important;
 
   text-align: center !important;
   font-size: 32px;
@@ -43,13 +43,13 @@
 }
 
 .nav-link:hover {
-  color: #006ac8 !important;
+  color: rgba(124,226,255,1) !important;
 }
 
 .nav-link:focus {
-  color: #006ac8 !important;
+  color: rgba(124,226,255,1) !important;
 }
 
 .nav-link:active {
-  color: #006ac8 !important;
+  color: rgba(124,226,255,1) !important;
 }

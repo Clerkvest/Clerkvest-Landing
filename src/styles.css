@@ -3,8 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Kulim Park', Roboto, 'Helvetica Neue', sans-serif; }
+body {
+  margin: 0;
+  font-family: 'Kulim Park', Roboto, 'Helvetica Neue', sans-serif;
+}
 
 .btn-round {
+  border-radius: 24px;
   font-size: 24px;
+}
+
+.center-text {
+  width: 100%;
+  text-align: center;
 }
