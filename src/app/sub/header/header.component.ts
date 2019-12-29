@@ -10,10 +10,10 @@ import {map} from 'rxjs/operators';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
 
-  subscription: Subscription;
-  source = interval(5000);
-
-  currentState = 0;
+  switchSubscription: Subscription;
+  letterSubscription: Subscription;
+  switchInterval = interval(5000);
+  letterInterval = interval(100);
 
   keywords = [
     'Intrapreneurship.',
@@ -21,18 +21,59 @@ export class HeaderComponent implements OnInit, OnDestroy {
     'Geld.'
   ];
 
+  shouldRemove = true;
+  shouldCount = false;
+
+  currentState = 0;
+  currentLetter = this.keywords[1].length;
+
   constructor(@Inject(DOCUMENT) document) { }
 
   ngOnInit() {
-    this.subscription = this.source.subscribe(val => this.switch());
+    this.switchSubscription = this.switchInterval.subscribe(val => this.switch());
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    this.switchSubscription.unsubscribe();
+    this.letterSubscription.unsubscribe();
   }
 
   switch() {
-    document.getElementById('keyword-switch').innerText = this.keywords[this.currentState];
-    this.currentState = (this.currentState + 1) % 3;
+    if (this.shouldCount) {
+      this.currentState = (this.currentState + 1) % this.keywords.length;
+      this.shouldCount = false;
+    } else {
+      this.shouldCount = true;
+    }
+
+    if (this.letterSubscription) {
+      this.letterSubscription.unsubscribe();
+    }
+
+    this.letterSubscription = this.letterInterval.subscribe(value => this.letterAnim());
+  }
+
+  letterAnim() {
+    if (this.shouldRemove) {
+      document.getElementById('keyword-switch').innerText = this.keywords[this.currentState]
+        .substr(0, this.currentLetter) + '|';
+
+      if (this.currentLetter !== -1) {
+        this.currentLetter--;
+      } else {
+        this.letterSubscription.unsubscribe();
+        this.shouldRemove = false;
+      }
+    } else {
+      document.getElementById('keyword-switch').innerText = this.keywords[this.currentState]
+        .substr(0, this.currentLetter) + '|';
+
+      if (this.currentLetter !== this.keywords[this.currentState].length + 1) {
+        this.currentLetter++;
+      } else {
+        this.letterSubscription.unsubscribe();
+        this.shouldRemove = true;
+      }
+    }
   }
 }
