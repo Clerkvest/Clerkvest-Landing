@@ -1,0 +1,44 @@
+.header-container {
+  height: 82%;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+}
+
+.header-text-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+
+.header-image-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+
+.header-image {
+  max-width: 92%;
+  max-height: 100%;
+}
+
+.header-headline-container {
+  display: inline-block;
+  margin: 15% auto 0;
+  padding: 3px;
+  max-width: 40%;
+  text-align: left;
+}
+
+.header-center-headline {
+  width: 100%;
+  font-size: 52px !important;
+  font-weight: bold;
+}
+
+.header-center-subline {
+  width: 100%;
+  text-align: left;
+  font-size: 22px !important;
+  font-weight: lighter;
+}
