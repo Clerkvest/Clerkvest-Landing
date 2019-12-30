@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
 
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: 'Kulim Park', Roboto, 'Helvetica Neue', sans-serif;
