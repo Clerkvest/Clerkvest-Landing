@@ -41,10 +41,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   switch() {
     if (this.shouldCount) {
       this.currentState = (this.currentState + 1) % this.keywords.length;
-      this.shouldCount = false;
-    } else {
-      this.shouldCount = true;
     }
+
+    this.shouldCount = !this.shouldCount;
 
     if (this.letterSubscription) {
       this.letterSubscription.unsubscribe();
@@ -56,7 +55,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   letterAnim() {
     if (this.shouldRemove) {
       document.getElementById('keyword-switch').innerText = this.keywords[this.currentState]
-        .substr(0, this.currentLetter) + '|';
+        .substr(0, this.currentLetter);
 
       if (this.currentLetter !== -1) {
         this.currentLetter--;
@@ -66,7 +65,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
       }
     } else {
       document.getElementById('keyword-switch').innerText = this.keywords[this.currentState]
-        .substr(0, this.currentLetter) + '|';
+        .substr(0, this.currentLetter);
 
       if (this.currentLetter !== this.keywords[this.currentState].length + 1) {
         this.currentLetter++;
