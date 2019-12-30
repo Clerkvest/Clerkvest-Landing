@@ -13,6 +13,7 @@ import { HeaderComponent } from './sub/header/header.component';
 import { ReasonsComponent } from './sub/reasons/reasons.component';
 import { FeaturesComponent } from './sub/features/features.component';
 import { TitleComponent } from './sub/title/title.component';
+import { ContactComponent } from './sub/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TitleComponent } from './sub/title/title.component';
     HeaderComponent,
     ReasonsComponent,
     FeaturesComponent,
-    TitleComponent
+    TitleComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
