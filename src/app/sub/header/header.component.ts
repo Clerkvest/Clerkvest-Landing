@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   keywords = [
     'Intrapreneurship.',
     'Selbstständigkeit.',
-    'Geld.'
+    'Motivation.'
   ];
 
   shouldRemove = true;
