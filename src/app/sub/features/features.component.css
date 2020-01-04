@@ -1,0 +1,23 @@
+#features-section {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.feature-headline {
+  text-align: center;
+  font-size: 42px;
+
+  margin-bottom: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.feature-img {
+  text-align: center;
+}
+
+.feature-img img {
+  width: 40%;
+}
