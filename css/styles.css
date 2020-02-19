@@ -235,7 +235,6 @@
 
 .dropdown-menu-signin {
     width: 500px;
-    min-height: 300px;
 }
 
 .dropdown-tab-icon {
@@ -277,6 +276,37 @@
     margin-top: 2px;
 }
 
+.dropdown-content {
+    width: 65%;
+    height: 185px;
+    margin-left: 95px;
+    margin-top: 5px;
+}
+
+.dropdown-content > p {
+    color: rgb(30, 30, 30);
+}
+
+.dropdown-btn-custom {
+    color: var(--white);
+    background-color: var(--default-blue);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.dropdown-btn-custom:active {
+    background-color: var(--hover-blue);
+}
+
+.dropdown-btn-custom:hover {
+    background-color: var(--hover-blue);
+}
+
+.dropdown-btn-custom:focus {
+    background-color: var(--hover-blue);
+}
+
 @media only screen and (max-width: 1200px) {
     .dropdown-menu-signin {
         width: 100%;
@@ -286,3 +316,59 @@
 /* Dropdown -- END */
 /* Dropdown -- END */
 /* Dropdown -- END */
+
+/* Form -- Start */
+/* Form -- Start */
+/* Form -- Start */
+
+.form-group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: -10px;
+}
+  
+.form-field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+    outline: 0;
+    font-size: 16px;
+    color: #212121;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+  
+.form-field::placeholder {
+    color: transparent;
+}
+  
+.form-field:placeholder-shown ~ .form-label {
+    font-size: 16px;
+    cursor: text;
+    top: 20px;
+}
+  
+label,
+.form-field:focus ~ .form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+  
+.form-field:focus ~ .form-label {
+    color: var(--default-blue);
+}
+  
+.form-field:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--default-blue);
+}
+
+/* Form -- END */
+/* Form -- END */
+/* Form -- END */
