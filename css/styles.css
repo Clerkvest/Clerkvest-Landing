@@ -119,6 +119,21 @@
 /* Spacing -- START */
 /* Spacing -- START */
 
+/* Text -- START */
+/* Text -- START */
+/* Text -- START */
+
+.text-bold-blue {
+    color: var(--default-blue);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+/* Text -- START */
+/* Text -- START */
+/* Text -- START */
+
 /* Nav -- START */
 /* Nav -- START */
 /* Nav -- START */
