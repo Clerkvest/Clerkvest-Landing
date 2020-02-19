@@ -3,6 +3,7 @@
 /* Vars -- START */
 
 :root {
+    --white: rgb(244,244,244);
     --default-blue: rgb(51, 104, 240);
     --hover-blue: rgb(7, 71, 166);
 }
@@ -50,19 +51,19 @@
 }
 
 .margin-left-lg {
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .margin-top-lg {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .margin-right-lg {
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 .margin-bottom-lg {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 /* Padding */
@@ -137,6 +138,18 @@
 /* Nav -- START */
 /* Nav -- START */
 /* Nav -- START */
+
+.navbar-brand {
+    color: var(--default-blue);
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.navbar-brand:hover {
+    color: var(--hover-blue);
+}
+
 .navbar-toggler{
     width: 50px;
     height: 40px;
@@ -188,6 +201,88 @@
     transform: rotate(0);
 }
 
+.nav-btn-custom {
+    color: var(--white);
+    background-color: var(--default-blue);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.nav-btn-custom:active {
+    background-color: var(--hover-blue);
+}
+
+.nav-btn-custom:hover {
+    background-color: var(--hover-blue);
+}
+
+.nav-btn-custom:focus {
+    background-color: var(--hover-blue);
+}
+
 /* Nav -- END */
 /* Nav -- END */
 /* Nav -- END */
+
+/* Dropdown -- Start */
+/* Dropdown -- Start */
+/* Dropdown -- Start */
+
+.dropdown-toggle-hide:after { 
+    content: none 
+}
+
+.dropdown-menu-signin {
+    width: 500px;
+    min-height: 300px;
+}
+
+.dropdown-tab-icon {
+    width: 35px;
+    height: 35px;
+    background-color: var(--default-blue);
+    color: var(--white);
+
+    border-radius: 100px;
+
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.dropdown-tab-icon > i {
+    margin-top: 9px;
+    margin-left: 11.5px;
+}
+
+.dropdown-tab-text {
+    width: 65%;
+}
+
+.dropdown-underlined-text {
+    color: var(--default-blue);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.dropdown-underline {
+    height: 3px;
+    background-color: var(--default-blue);
+
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dropdown-menu-signin {
+        width: 100%;
+    }
+}
+
+/* Dropdown -- END */
+/* Dropdown -- END */
+/* Dropdown -- END */

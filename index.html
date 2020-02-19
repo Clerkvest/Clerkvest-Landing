@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Clerkvest</title>
@@ -19,7 +20,7 @@
             <span class="line line-middle"></span> 
             <span class="line line-bottom"></span>
         </button>
-        <a class="navbar-brand text-color-white" href="/">
+        <a class="navbar-brand margin-left-lg" href="/">
           Clerkvest
         </a>  		
         </div>
@@ -38,16 +39,26 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right ml-auto">
-                <li class="nav-item dropdown text-center">
-                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action text-bold-blue">
+                <li class="nav-item dropdown margin-right-lg">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle dropdown-toggle-hide user-action text-bold-blue">
                         sign in
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-center">
-                        <li><a class="dropdown-item"><i class="fa fa-user"></i> Your Profile</a></li>
-                        <li><a class="dropdown-item"><i class="fa fa-building"></i> Your Company</a></li>
-                        <li class="divider dropdown-divider"></li>
-                        <li><a class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a></li>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-menu-signin">
+                        <div class="row">
+                            <div class="dropdown-tab-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="dropdown-tab-text">
+                                <div class="dropdown-underlined-text">sign in</div>
+                                <div class="dropdown-underline"></div>
+                            </div>
+                        </div>
                     </ul>
+                </li>
+                <li class="nav-item margin-right-lg">
+                    <button type="button" class="btn btn-primary nav-btn-custom">
+                        start for free
+                    </button>
                 </li>
             </ul>
         </div>
