@@ -61,7 +61,7 @@ function executeLogin() {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."
             responseField.className = "success";
         } else {
-            responseField.innerHTML = "Failed to send email. Please contact our support if you continuously getting this error message.";
+            responseField.innerHTML = "Failed to send email. Please contact our support if you are continuously getting this error message.";
             responseField.className = "failure";
         }
     }
@@ -98,7 +98,7 @@ function executeQuickSetup() {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."
             responseField.className = "success";
         } else {
-            responseField.innerHTML = "Failed to send email. Please contact our support if you continuously getting this error message.";
+            responseField.innerHTML = "Failed to send email. Please contact our support if you are continuously getting this error message.";
             responseField.className = "failure";
         }
     }
@@ -191,7 +191,7 @@ function executeFullSetup() {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."
             responseField.className = "success";
         } else {
-            responseField.innerHTML = "Failed to send email. Please contact our support if you continuously getting this error message.";
+            responseField.innerHTML = "Failed to send email. Please contact our support if you are continuously getting this error message.";
             responseField.className = "failure";
         }
     }
