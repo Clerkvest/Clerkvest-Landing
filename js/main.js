@@ -188,11 +188,15 @@ function executeFullSetup() {
         if (request.status >= 200 && request.status < 400) {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."
             responseField.className = "success";
+        } else if (request.status == 409) {
+            responseField.innerHTML = "Company already exists. Please contact our support if you lost your access to your email adress.";
+            responseField.className = "failure";
         } else {
             responseField.innerHTML = "Failed to send email. Please contact our support if you are continuously getting this error message.";
             responseField.className = "failure";
         }
     }
     
-    request.send(JSON.stringify(companyObj));
+    var data = JSON.stringify(companyObj);
+    request.send(data);
 }
