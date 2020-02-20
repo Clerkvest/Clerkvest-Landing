@@ -21,18 +21,22 @@
       <div class="row">
         <div class="col-md-6 create-form-fast">
           <h3>Quick setup</h3>
-          <form>
+          <div class="form">
             <div class="form-group">
-              <input class="input form-field" id="input-email" type="text" placeholder=" ">
-              <label for="input-email" class="form-label">E-Mail address</label>
-              <p class="hide" id="create-required-message">This field is required.</p>
+              <input class="input form-field" id="input-email-quick" type="text" placeholder=" ">
+              <label for="input-email-quick" class="form-label">E-Mail address</label>
+              <p class="hide" id="create-required-message-quick">This field is required.</p>
             </div>
-            <button class="btn btn-primary create-btn-custom">start for free</button>
-          </form>
+            <button class="btn btn-primary create-btn-custom" onclick="executeQuickSetup()">start for free</button>
+            <p class="hide" id="create-response-message-quick"></p>
+            <p class="create-question">Whats does the quick setup do?</p>
+            <p class="create-answer">The quick setup allows you to create a company profile just with your email address. This method is using default values you may want to edit them yourself later in the company settings.</p>
+            <p class="create-note">The user with the given email address is automatically an administrator</p>
+          </div>
         </div>
         <div class="col-md-6 create-form-full">
           <h3>Full setup</h3>
-          <form>
+          <div class="form">
             <div class="form-group">
               <input class="input form-field" id="input-email" type="text" placeholder=" ">
               <label for="input-email" class="form-label">E-Mail address</label>
@@ -59,7 +63,7 @@
               <p class="hide" id="create-required-message">This field is required.</p>
             </div>
             <button class="btn btn-primary create-btn-custom">start for free</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>

@@ -423,6 +423,29 @@ label,
     padding: 5%;
 }
 
+.create-question {
+    color: var(--default-blue);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; 
+
+    padding-top: 45px;
+}
+
+.create-answer {
+    color: var(--gray);
+    font-size: 14px;
+
+    padding-top: -5px;
+}
+
+.create-note {
+    color: var(--gray);
+    font-size: 14px;
+
+    padding-top: -5px;
+}
+
 .create-form-fast h3 {
     text-align: center;
     color: var(--gray);
@@ -438,7 +461,7 @@ label,
     color: var(--white);
 }
 
-.create-container form {
+.create-container .form {
     padding: 10%;
 }
 
