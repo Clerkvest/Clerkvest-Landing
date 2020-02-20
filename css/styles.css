@@ -4,6 +4,8 @@
 
 :root {
     --white: rgb(244,244,244);
+    --hover-white: rgb(220, 220, 220);
+    --gray: rgb(51, 51, 51);
     --default-blue: rgb(51, 104, 240);
     --hover-blue: rgb(7, 71, 166);
 }
@@ -394,6 +396,153 @@ label,
 /* Form -- END */
 /* Form -- END */
 /* Form -- END */
+
+/* Create -- Start */
+/* Create -- Start */
+/* Create -- Start */
+
+.create-header {
+    color: var(--default-blue);
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: center;
+
+    padding-top: 75px;
+}
+
+.create-container {
+    margin-top: 25px;
+    margin-bottom: 5%;
+
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.create-form-fast {
+    padding: 5%;
+}
+
+.create-form-fast h3 {
+    text-align: center;
+    color: var(--gray);
+}
+
+.create-form-full {
+    padding: 5%;
+    background: var(--default-blue);
+}
+
+.create-form-full h3 {
+    text-align: center;
+    color: var(--white);
+}
+
+.create-container form {
+    padding: 10%;
+}
+
+.create-form-fast .create-btn-custom {
+    color: var(--white);
+    background-color: var(--default-blue);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.create-form-fast .create-btn-custom:active {
+    background-color: var(--hover-blue);
+}
+
+.create-form-fast .create-btn-custom:hover {
+    background-color: var(--hover-blue);
+}
+
+.create-form-fast .create-btn-custom:focus {
+    background-color: var(--hover-blue);
+}
+
+.create-form-full .create-btn-custom {
+    color: var(--default-blue);
+    background-color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.create-form-full .create-btn-custom:active {
+    background-color: var(--hover-white);
+}
+
+.create-form-full .create-btn-custom:hover {
+    background-color: var(--hover-white);
+}
+
+.create-form-full .create-btn-custom:focus {
+    background-color: var(--hover-white);
+}
+
+.create-form-full .form-group {
+    width: 100%;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: -10px;
+}
+  
+.create-form-full .form-field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+    outline: 0;
+    font-size: 16px;
+    color: #212121;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+  
+.create-form-full .form-field::placeholder {
+    color: transparent;
+}
+  
+.create-form-full .form-field:placeholder-shown ~ .form-label {
+    font-size: 16px;
+    cursor: text;
+    top: 20px;
+}
+  
+.create-form-full label,
+.create-form-full .form-field:focus ~ .form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    color: var(--white);
+}
+  
+.create-form-full .form-field:focus ~ .form-label {
+    color: var(--white);
+}
+  
+.create-form-full .form-field:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--white);
+}
+
+@media only screen and (max-width: 320px) {
+    .create-form-full .form-group {
+        width: 80%;
+    }
+      
+    .create-form-full .form-field {
+        width: 80%;
+    }
+}
+
+/* Create -- End */
+/* Create -- End */
+/* Create -- End */
 
 /* Response -- Start */
 /* Response -- Start */
