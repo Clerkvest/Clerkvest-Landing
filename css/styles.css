@@ -1,3 +1,13 @@
+/* Imports -- START */
+/* Imports -- START */
+/* Imports -- START */
+
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+
+/* Imports -- END */
+/* Imports -- END */
+/* Imports -- END */
+
 /* Vars -- START */
 /* Vars -- START */
 /* Vars -- START */
@@ -6,6 +16,8 @@
     --white: rgb(244,244,244);
     --hover-white: rgb(220, 220, 220);
     --gray: rgb(51, 51, 51);
+    --font-black: rgb(0, 17, 50);
+    --font-black: rgb(40, 30, 80);
     --default-blue: rgb(51, 104, 240);
     --hover-blue: rgb(7, 71, 166);
 }
@@ -13,6 +25,24 @@
 /* Vars -- END */
 /* Vars -- END */
 /* Vars -- END */
+
+/* Body -- START */
+/* Body -- START */
+/* Body -- START */
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kulim Park', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* Body -- START */
+/* Body -- START */
+/* Body -- START */
 
 /* Spacing -- START */
 /* Spacing -- START */
@@ -601,3 +631,110 @@ label,
 /* Response -- End */
 /* Response -- End */
 /* Response -- End */
+
+/* header -- Start */
+/* header -- Start */
+/* header -- Start */
+
+.header {
+    width: 100%;
+    height: 500px;
+}
+
+.header .container .keyword {
+    color: var(--font-black);
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 50px;
+    
+    padding-top: 150px;
+}
+
+.header .container .keyword span {
+    font-weight: bolder;
+}
+
+.sentence {
+    color: var(--default-blue);
+    text-align: left;
+    text-transform: uppercase; 
+    font-size: 50px;
+    
+    padding-top: 125px;
+}
+
+.slidingVertical {
+	display: inline;
+	text-indent: 8px;
+}
+
+.slidingVertical span {
+	animation: topToBottom 10s linear infinite 0s;
+	-ms-animation: topToBottom 10s linear infinite 0s;
+    -webkit-animation: topToBottom 10s linear infinite 0s;
+	opacity: 0;
+	overflow: hidden;
+    position: absolute;
+}
+
+.slidingVertical span:nth-child(2) {
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+
+.slidingVertical span:nth-child(3) {
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+
+.slidingVertical span:nth-child(4) {
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+
+@keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; transform: translateY(-20px); }
+	10% { opacity: 1; transform: translateY(0px); }
+	25% { opacity: 1; transform: translateY(0px); }
+	30% { opacity: 0; transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-20px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-20px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-20px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/* header -- End */
+/* header -- End */
+/* header -- End */
