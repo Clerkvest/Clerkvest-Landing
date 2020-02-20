@@ -5,6 +5,7 @@ class Company {
         this.payAmount = payAmount;
         this.payInterval = payInterval;
         this.inviteOnly = inviteOnly;
+        this.image = null;
     }
 }
 
@@ -175,6 +176,8 @@ function executeFullSetup() {
         payoutInterval,
         inviteOnly
     );
+
+    console.log(companyObj);
 
     request.open('POST', 'https://clerkvest.com/api/company/create?mail=' + email, true);
     request.setRequestHeader("Content-type", "application/json")
