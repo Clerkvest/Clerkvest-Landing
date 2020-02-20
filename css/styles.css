@@ -294,7 +294,8 @@
     background-color: var(--default-blue);
     font-size: 15px;
     font-weight: bold;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    border-color: var(--default-blue);
 }
 
 .dropdown-btn-custom:active {
@@ -446,19 +447,23 @@ label,
     background-color: var(--default-blue);
     font-size: 15px;
     font-weight: bold;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    border-color: var(--default-blue);
 }
 
 .create-form-fast .create-btn-custom:active {
     background-color: var(--hover-blue);
+    border-color: var(--hover-blue);
 }
 
 .create-form-fast .create-btn-custom:hover {
     background-color: var(--hover-blue);
+    border-color: var(--hover-blue);
 }
 
 .create-form-fast .create-btn-custom:focus {
     background-color: var(--hover-blue);
+    border-color: var(--hover-blue);
 }
 
 .create-form-full .create-btn-custom {
@@ -467,6 +472,7 @@ label,
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase; 
+    border-color: var(--white) !important;
 }
 
 .create-form-full .create-btn-custom:active {
