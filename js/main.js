@@ -177,8 +177,6 @@ function executeFullSetup() {
         inviteOnly
     );
 
-    console.log(companyObj);
-
     request.open('POST', 'https://clerkvest.com/api/company/create?mail=' + email, true);
     request.setRequestHeader("Content-type", "application/json")
     
@@ -196,5 +194,5 @@ function executeFullSetup() {
         }
     }
     
-    request.send(companyObj);
+    request.send(JSON.stringify(companyObj));
 }
