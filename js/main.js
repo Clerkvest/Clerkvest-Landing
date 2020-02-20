@@ -2,6 +2,9 @@ $('.dropdown-menu').click(function(e) {
     e.stopPropagation();
 });
 
+/**
+ * Executes the login api call and sets the response field innerHtml
+ */
 function executeLogin() {
     var request = new XMLHttpRequest()
     var email = document.getElementById("input-email").value;
@@ -19,8 +22,6 @@ function executeLogin() {
 
         var data = this.response;
         var responseField = document.getElementById("login-response-message");
-
-        console.log(responseField);
 
         if (request.status >= 200 && request.status < 400) {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."

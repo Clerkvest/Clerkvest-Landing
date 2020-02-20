@@ -309,8 +309,18 @@
 
 @media only screen and (max-width: 1200px) {
     .dropdown-menu-signin {
-        width: 108%;
+        width: 102%;
         margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .dropdown-underline {
+        width: 80%;
+    }
+
+    .dropdown-content > p {
+        width: 80%;
     }
 }
 
@@ -369,6 +379,16 @@ label,
 .form-field:focus {
     padding-bottom: 6px;
     border-bottom: 2px solid var(--default-blue);
+}
+
+@media only screen and (max-width: 320px) {
+    .form-group {
+        width: 80%;
+    }
+      
+    .form-field {
+        width: 80%;
+    }
 }
 
 /* Form -- END */
