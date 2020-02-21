@@ -233,6 +233,17 @@ body {
     transform: rotate(0);
 }
 
+.nav-link-custom {
+    color: var(--default-blue);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.nav-link-custom:hover {
+    color: var(--hover-blue);
+}
+
 .nav-btn-custom {
     color: var(--white);
     background-color: var(--default-blue);
