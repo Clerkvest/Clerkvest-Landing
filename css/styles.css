@@ -774,3 +774,35 @@ label,
 /* header -- End */
 /* header -- End */
 /* header -- End */
+
+/* shadow -- Start */
+/* shadow -- Start */
+/* shadow -- Start */
+
+.img-shadow {
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+
+    transition: ease-in-out 0.25s;
+}
+
+.img-shadow:hover { 
+    transform: translateY(-1px);
+}
+
+/* shadow -- End */
+/* shadow -- End */
+/* shadow -- End */
+
+/* Animation -- End */
+/* Animation -- End */
+/* Animation -- End */
+
+.fade-in {
+    transition: ease-in-out 0.25s;
+}
+
+/* Animation -- End */
+/* Animation -- End */
+/* Animation -- End */
