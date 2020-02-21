@@ -750,19 +750,80 @@ label,
     padding-bottom: 88px;
 }
 
+.image-container {
+    position: relative;
+}
+
 .header-img-left {
     max-width: 100%;
     height: auto;
+
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+
+    transition: ease-in-out 0.25s;
 }
 
 .header-img-right-top {
     max-width: 100%;
     height: auto;
+
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+
+    transition: ease-in-out 0.25s;
 }
 
 .header-img-right-bottom {
     max-width: 100%;
     height: auto;
+
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
+
+    transition: ease-in-out 0.25s;
+}
+
+.header-img-left:hover { 
+    transform: translateY(-1px);
+}
+
+.header-img-right-top:hover { 
+    transform: translateY(-1px);
+}
+
+.header-img-right-bottom:hover { 
+    transform: translateY(-1px);
+}
+
+.header-img-left-text {
+    max-width: calc(100% - 15px);
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    margin-left: 15px;
+    padding-left: 5px;
+}
+
+.header-img-right-top-text {
+    max-width: calc(100% - 15px);
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    margin-left: 15px;
+    padding-left: 5px;
+}
+
+.header-img-right-bottom-text {
+    max-width: calc(100% - 15px);
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    margin-left: 15px;
+    padding-left: 5px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -774,35 +835,3 @@ label,
 /* header -- End */
 /* header -- End */
 /* header -- End */
-
-/* shadow -- Start */
-/* shadow -- Start */
-/* shadow -- Start */
-
-.img-shadow {
-    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
-    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
-    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.17);
-
-    transition: ease-in-out 0.25s;
-}
-
-.img-shadow:hover { 
-    transform: translateY(-1px);
-}
-
-/* shadow -- End */
-/* shadow -- End */
-/* shadow -- End */
-
-/* Animation -- End */
-/* Animation -- End */
-/* Animation -- End */
-
-.fade-in {
-    transition: ease-in-out 0.25s;
-}
-
-/* Animation -- End */
-/* Animation -- End */
-/* Animation -- End */
