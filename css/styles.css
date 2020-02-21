@@ -806,6 +806,7 @@ label,
     bottom: 5%;
     margin-left: 15px;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 .header-img-right-top-text {
@@ -815,6 +816,7 @@ label,
     bottom: 5%;
     margin-left: 15px;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 .header-img-right-bottom-text {
@@ -824,6 +826,7 @@ label,
     bottom: 5%;
     margin-left: 15px;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 @media only screen and (max-width: 320px) {
