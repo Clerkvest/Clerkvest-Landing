@@ -805,8 +805,8 @@ label,
 .header-img-left-text {
     max-width: calc(100% - 15px);
     background-color: white;
-    position: absolute;
-    bottom: 5%;
+    position: absolute !important;
+    bottom: 5% !important;
     margin-left: 15px;
     padding-left: 5px;
     padding-right: 5px;
@@ -815,8 +815,8 @@ label,
 .header-img-right-top-text {
     max-width: calc(100% - 15px);
     background-color: white;
-    position: absolute;
-    bottom: 5%;
+    position: absolute !important;
+    bottom: 5% !important;
     margin-left: 15px;
     padding-left: 5px;
     padding-right: 5px;
@@ -825,8 +825,8 @@ label,
 .header-img-right-bottom-text {
     max-width: calc(100% - 15px);
     background-color: white;
-    position: absolute;
-    bottom: 5%;
+    position: absolute !important;
+    bottom: 5% !important;
     margin-left: 15px;
     padding-left: 5px;
     padding-right: 5px;
