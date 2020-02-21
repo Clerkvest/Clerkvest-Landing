@@ -7,10 +7,6 @@ function setImageMargin() {
     var heightRightBottom = document.getElementById('header-img-right-bottom').clientHeight;
 
     var margin = heightLeft - (heightRightTop + heightRightBottom);
-    console.log(heightLeft);
-    console.log(heightRightTop);
-    console.log(heightRightBottom);
-    console.log(margin);
     document.getElementById('header-img-right-bottom').style.marginTop = margin + 'px';
 }
 
@@ -20,5 +16,3 @@ function setImageMargin() {
 function main() {
     setImageMargin();
 }
-
-main();
