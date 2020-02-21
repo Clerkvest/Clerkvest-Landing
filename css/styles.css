@@ -755,6 +755,7 @@ label,
 }
 
 .header-img-left {
+    position: relative;
     max-width: 100%;
     height: auto;
 
@@ -766,6 +767,7 @@ label,
 }
 
 .header-img-right-top {
+    position: relative;
     max-width: 100%;
     height: auto;
 
@@ -777,6 +779,7 @@ label,
 }
 
 .header-img-right-bottom {
+    position: relative;
     max-width: 100%;
     height: auto;
 
