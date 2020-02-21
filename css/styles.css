@@ -754,10 +754,6 @@ label,
     height: auto;
 }
 
-.header-img-right-container {
-
-}
-
 .header-img-right-top {
     max-width: 100%;
     height: auto;
@@ -766,10 +762,12 @@ label,
 .header-img-right-bottom {
     max-width: 100%;
     height: auto;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+@media only screen and (max-width: 320px) {
+    .sentence {
+        font-size: 32px;
+    }
 }
 
 /* header -- End */
