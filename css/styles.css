@@ -803,7 +803,7 @@ label,
     max-width: calc(100% - 15px);
     background-color: white;
     position: absolute;
-    top: 85%;
+    bottom: 5%;
     margin-left: 15px;
     padding-left: 5px;
 }
@@ -812,7 +812,7 @@ label,
     max-width: calc(100% - 15px);
     background-color: white;
     position: absolute;
-    top: 85%;
+    bottom: 5%;
     margin-left: 15px;
     padding-left: 5px;
 }
@@ -821,7 +821,7 @@ label,
     max-width: calc(100% - 15px);
     background-color: white;
     position: absolute;
-    top: 85%;
+    bottom: 5%;
     margin-left: 15px;
     padding-left: 5px;
 }
