@@ -832,6 +832,12 @@ label,
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .header-img-right-top {
+        margin-top: 25px;
+    }
+}
+
 /* header -- End */
 /* header -- End */
 /* header -- End */
