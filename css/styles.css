@@ -939,3 +939,38 @@ label,
 /* FAQ -- End */
 /* FAQ -- End */
 /* FAQ -- End */
+
+/* Quote -- Start */
+/* Quote -- Start */
+/* Quote -- Start */
+
+.quote-container {
+    width: 100%;
+    background-color: var(--default-blue);
+}
+
+.quote-text {
+    color: var(--white);
+    font-size: 48px;
+
+    padding-top: 88px;
+}
+
+.quote-writer {
+    color: var(--white);
+    font-size: 22px;
+
+    padding-bottom: 88px;
+}
+
+/* Quote -- End */
+/* Quote -- End */
+/* Quote -- End */
+
+/* Footer -- End */
+/* Footer -- End */
+/* Footer -- End */
+
+/* Footer -- End */
+/* Footer -- End */
+/* Footer -- End */
