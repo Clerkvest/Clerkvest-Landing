@@ -999,6 +999,10 @@ label,
     background-color: var(--font-black);
 }
 
+.footer-copyright {
+    padding-bottom: 64px;
+}
+
 /* Footer -- End */
 /* Footer -- End */
 /* Footer -- End */
