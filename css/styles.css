@@ -910,3 +910,32 @@ label,
 /* Reasons -- End */
 /* Reasons -- End */
 /* Reasons -- End */
+
+/* FAQ -- Start */
+/* FAQ -- Start */
+/* FAQ -- Start */
+
+.faq-container {
+    width: 100%;
+}
+
+.faq-question {
+    color: var(--default-blue);
+    font-size: 24px;
+
+    padding-right: 30%;
+    margin-top: 88px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    margin-top: 88px;
+}
+
+.faq-last-row {
+    padding-bottom: 88px;
+}
+
+/* FAQ -- End */
+/* FAQ -- End */
+/* FAQ -- End */
