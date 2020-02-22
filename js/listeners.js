@@ -23,18 +23,14 @@ function readCookie(name) {
 }
 
 /**
- * Redirects of cookies are set
+ * Redirects if cookies are set
  */
 function redirectIfLoggedIn() {
     var api = readCookie('api');
     var myself = readCookie('myself');
 
-    console.log(api);
-    console.log(myself);
-
     if (api != undefined && myself != undefined) {
-        console.log("redirecting");
-        window.location.href = '/api';
+        window.location.href = '/app';
     }
 }
 
