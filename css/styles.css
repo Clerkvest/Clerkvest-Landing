@@ -17,6 +17,7 @@
     --hover-white: rgb(220, 220, 220);
     --gray: rgb(51, 51, 51);
     --font-black: rgb(0, 0, 0);
+    --font-black-sub: rgba(0, 0, 0, 0.75);
     --default-blue: rgb(51, 104, 240);
     --hover-blue: rgb(7, 71, 166);
 }
@@ -1006,3 +1007,47 @@ label,
 /* Footer -- End */
 /* Footer -- End */
 /* Footer -- End */
+
+/* Legal -- Start */
+/* Legal -- Start */
+/* Legal -- Start */
+
+.legal-container {
+    padding-top: 125px;
+    padding-bottom: 88px;
+}
+
+.legal-container h1 {
+    color: var(--font-black);
+    font-size: 38px;
+}
+
+.legal-container h2 {
+    color: var(--font-black);
+    font-size: 28px;
+}
+
+.legal-container h3 {   
+    color: var(--font-black);
+    font-size: 22px;
+}
+
+.legal-container p {
+    color: var(--font-black-sub);
+    font-size: 16px;
+}
+
+.no-space {
+    margin-bottom: -5px;
+}
+
+.hr {
+    width: 100%;
+    height: 0.5px;
+
+    background-color: rgba(155, 155, 155, 0.75);
+}
+
+/* Legal -- End */
+/* Legal -- End */
+/* Legal -- End */
