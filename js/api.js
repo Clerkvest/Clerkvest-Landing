@@ -54,7 +54,7 @@ function executeLogin() {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."
             responseField.className = "success";
         } else if (request.status === 403) {
-            responseField.innerHTML = "Company is invite only. Please contact your administrator"
+            responseField.innerHTML = "Company is invite only. Please contact your administrator."
             responseField.className = "failure";
         } else {
             responseField.innerHTML = "Failed to send email. Please contact our support if you are continuously getting this error message.";
@@ -93,6 +93,12 @@ function executeQuickSetup() {
         if (request.status >= 200 && request.status < 400) {
             responseField.innerHTML = "Email send successfully. It could happen that our email lands inside of your spam folder."
             responseField.className = "success";
+        } else if (request.status === 403) {
+            responseField.innerHTML = "Company already exists but is marked as invite only. Please contact your administrator."
+            responseField.className = "failure";
+        } else if (request.status === 409) {
+            responseField.innerHTML = "Company already exists. Please contact our support if you lost your access to your email adress."
+            responseField.className = "failure";
         } else {
             responseField.innerHTML = "Failed to send email. Please contact our support if you are continuously getting this error message.";
             responseField.className = "failure";
