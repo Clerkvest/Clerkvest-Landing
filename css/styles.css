@@ -466,7 +466,7 @@ label,
 }
 
 .create-container {
-    margin-top: 25px;
+    margin-top: 125px;
     margin-bottom: 5%;
 
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
@@ -619,6 +619,14 @@ label,
       
     .create-form-full .form-field {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .create-container {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
