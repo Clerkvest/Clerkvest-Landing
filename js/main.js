@@ -60,8 +60,6 @@ function deleteCookieIfOld() {
             deleteCookie('api');
             deleteCookie('myself');
         }
-
-        console.log(request.status);
     }
     
     request.setRequestHeader('Authorization', 'Bearer '  + readCookie('api'));
