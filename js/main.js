@@ -35,12 +35,14 @@ function setImageMargin() {
     var heightRightTop = document.getElementById('header-img-right-top').clientHeight;
     var heightRightBottom = document.getElementById('header-img-right-bottom').clientHeight;
 
-    if (document.documentElement.clientWidth > 767) { 
-        var margin = heightLeft - (heightRightTop + heightRightBottom);
-        document.getElementById('header-img-right-bottom').style.marginTop = margin + 'px';
-    } else {
-        var margin = 25;
-        document.getElementById('header-img-right-bottom').style.marginTop = margin + 'px';
+    if (heightLeft != undefined && heightRightTop != undefined && heightRightBottom != undefined) {
+        if (document.documentElement.clientWidth > 767) { 
+            var margin = heightLeft - (heightRightTop + heightRightBottom);
+            document.getElementById('header-img-right-bottom').style.marginTop = margin + 'px';
+        } else {
+            var margin = 25;
+            document.getElementById('header-img-right-bottom').style.marginTop = margin + 'px';
+        }
     }
 }
 
