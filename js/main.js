@@ -31,11 +31,15 @@ function deleteCookie(cname) {
  * Sets the margin of the bottom right image
  */
 function setImageMargin() {
-    var heightLeft = document.getElementById('header-img-left').clientHeight;
-    var heightRightTop = document.getElementById('header-img-right-top').clientHeight;
-    var heightRightBottom = document.getElementById('header-img-right-bottom').clientHeight;
+    var left = document.getElementById('header-img-left');
+    var rightTop = document.getElementById('header-img-right-top');
+    var rightBottom = document.getElementById('header-img-right-bottom');
 
-    if (heightLeft != undefined && heightRightTop != undefined && heightRightBottom != undefined) {
+    if(left != null && rightTop != null && rightBottom != null) {
+        var heightLeft = left.clientHeight;
+        var heightRightTop = rightTop.clientHeight;
+        var heightRightBottom = rightBottom.clientHeight;
+    
         if (document.documentElement.clientWidth > 767) { 
             var margin = heightLeft - (heightRightTop + heightRightBottom);
             document.getElementById('header-img-right-bottom').style.marginTop = margin + 'px';
