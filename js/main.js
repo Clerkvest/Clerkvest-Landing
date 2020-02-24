@@ -1,4 +1,15 @@
 /**
+ * Creates an list of url parameter
+ */
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+/**
  * Reads the value of a cookie. Code by: https://www.w3schools.com/js/js_cookies.asp
  * @param {String} name Name of the Cookie
  */
@@ -73,9 +84,40 @@ function deleteCookieIfOld() {
 }
 
 /**
+ * Displays the overlay
+ */
+function showOverlay() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+/**
+ * Hides the overlay
+ */
+function hideOverlay() {
+    document.getElementById("overlay").style.display = "none";
+}
+
+/**
+ * displays the overlay if a parameter if given
+ */
+function displayOverlayIfEnabled() {
+    var parameter = getUrlVars();
+
+    var titleElement = document.getElementById("overlay-title");
+    var messageElement = document.getElementById("overlay-message");
+    
+    if(parameter['redirected'] === 'unknown_user'){
+        titleElement.innerHTML = 'Upps. Something went wrong'
+        messageElement.innerHTML = 'Seems like your login is not longer valid. Please login again so we can generate a new login for you.'
+        showOverlay();
+    }
+}
+
+/**
  * Main function to init everything
  */
 function main() {
     setImageMargin();
     deleteCookieIfOld();
+    displayOverlayIfEnabled();
 }
