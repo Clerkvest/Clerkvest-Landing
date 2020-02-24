@@ -701,6 +701,7 @@ label,
 
     padding-top: 15px;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .overlay-message {
@@ -713,11 +714,23 @@ label,
     color: var(--default-blue);
     font-size: 28px;
     position: absolute;
-    right: 0px;
-    top: 5px;
+    left: 15px;
+    bottom: 15px;
 
     border: 0;
     background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .overlay-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .overlay-container {
+        height: 400px;
+    }
 }
 
 /* Overlay -- End */
